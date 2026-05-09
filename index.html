@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="th" id="html-root" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>LUMI Air Pro | Premium Product Landing Page</title>
+
+  <meta
+    name="description"
+    content="Premium bilingual product landing page demo built with HTML, Tailwind CSS, and Vanilla JavaScript."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=LINE+Seed+Sans+TH:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: [
+              'LINE Seed Sans TH',
+              '-apple-system',
+              'BlinkMacSystemFont',
+              'Segoe UI',
+              'sans-serif',
+            ],
+          },
+          colors: {
+            apple: {
+              blue: '#0071e3',
+              'blue-hover': '#0077ed',
+              gray: '#86868b',
+              'gray-light': '#f5f5f7',
+              dark: '#1d1d1f',
+            },
+          },
+          boxShadow: {
+            'apple-card': '0 2px 12px rgba(0,0,0,0.08), 0 0 0 0.5px rgba(0,0,0,0.04)',
+            'apple-hero': '0 32px 80px rgba(0,0,0,0.12)',
+            'apple-float': '0 8px 32px rgba(0,0,0,0.12)',
+          },
+          letterSpacing: {
+            apple: '-0.015em',
+            'apple-tight': '-0.025em',
+            'apple-wide': '0.02em',
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="page-bg"></div>
+ 
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero-section" style="padding: 120px 22px 80px;">
+      <div style="max-width: 1080px; margin: 0 auto; width: 100%;">
+        <div class="hero-inner">
+
+          <!-- Copy -->
+          <div class="reveal">
+            <p class="hero-eyebrow">
+              <span data-i18n="hero.badge">Premium Product Landing Page Demo</span>
+            </p>
+
+            <h1 class="hero-title" data-i18n="hero.title">เสียงที่เงียบขึ้น ดีไซน์ที่ชัดขึ้น</h1>
+
+            <p class="hero-sub" data-i18n="hero.description">
+              LUMI Air Pro คือหูฟังไร้สายระดับพรีเมียมสำหรับคนทำงาน ครีเอเตอร์ และสายเดินทาง พร้อมระบบตัดเสียงรบกวน แบตเตอรี่อึด และดีไซน์เรียบหรู
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#pricing" class="cta-solid" data-i18n="hero.primaryCta">เริ่มต้นสั่งซื้อ</a>
+              <a href="#features" class="cta-outline" data-i18n="hero.secondaryCta">ดูฟีเจอร์</a>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal reveal-delay-2 hero-visual" style="margin-top: 32px;">
+            <div class="visual-card">
+              <div class="visual-glow"></div>
+              <div class="visual-inner">
+                <!-- Headphone illustration -->
+                <div class="headphone-band"></div>
+                <div class="ear-cup left"></div>
+                <div class="ear-cup right"></div>
+
+                <!-- Bottom pill -->
+                <div class="visual-pill">
+                  <div class="visual-pill-dot"></div>
+                  <span class="visual-pill-text">กำลังเล่น — Spatial Audio</span>
+                </div>
+
+                <!-- Top-left badge -->
+                <div class="visual-badge-tl">LUMI Air Pro</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-strip">
+      <div class="stats-grid">
+        <div class="stat-cell reveal">
+          <div class="stat-number">40h</div>
+          <div class="stat-label" data-i18n="stats.battery">ใช้งานต่อเนื่องสูงสุด</div>
+        </div>
+        <div class="stat-cell reveal reveal-delay-1">
+          <div class="stat-number">−45dB</div>
+          <div class="stat-label" data-i18n="stats.noise">ระบบตัดเสียงรบกวนอัจฉริยะ</div>
+        </div>
+        <div class="stat-cell reveal reveal-delay-2">
+          <div class="stat-number">IPX5</div>
+          <div class="stat-label" data-i18n="stats.water">กันเหงื่อและละอองน้ำ</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="section-container">
+        <div class="reveal">
+          <p class="section-eyebrow" data-i18n="features.badge">Features</p>
+          <h2 class="section-title" data-i18n="features.title">ทุกฟีเจอร์ถูกออกแบบให้รู้สึกพรีเมียม</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon icon-blue">✦</div>
+            <h3 data-i18n="features.card1.title">Adaptive Noise Control</h3>
+            <p data-i18n="features.card1.text">ปรับระดับการตัดเสียงตามสภาพแวดล้อมโดยอัตโนมัติ เหมาะทั้งในออฟฟิศ คาเฟ่ และระหว่างเดินทาง</p>
+          </article>
+
+          <article class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon icon-indigo">◎</div>
+            <h3 data-i18n="features.card2.title">Spatial Audio</h3>
+            <p data-i18n="features.card2.text">ให้มิติเสียงที่กว้างขึ้นสำหรับเพลง หนัง และประชุมออนไลน์ เสียงชัด มีระยะ และไม่อึดอัด</p>
+          </article>
+
+          <article class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon icon-teal">◌</div>
+            <h3 data-i18n="features.card3.title">Fast Pairing</h3>
+            <p data-i18n="features.card3.text">เปิดเคสแล้วเชื่อมต่อทันที รองรับการสลับอุปกรณ์ระหว่างมือถือ แท็บเล็ต และโน้ตบุ๊ก</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN -->
+    <section id="design" class="section" style="background: var(--surface); border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border);">
+      <div class="section-container">
+        <div class="design-grid">
+          <div class="design-visual reveal">
+            <div class="design-orb"></div>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <p class="section-eyebrow" data-i18n="design.badge">Design</p>
+            <h2 class="design-body-title" data-i18n="design.title">เรียบ หรู และเบาจนลืมว่าใส่อยู่</h2>
+            <p class="design-body-text" data-i18n="design.text">ตัวเรือนโค้งมน เคสผิวด้าน และน้ำหนักที่สมดุล ช่วยให้ใช้งานได้นานโดยไม่ล้า เหมาะกับการพกพาทุกวัน</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECS -->
+    <section id="specs" class="section">
+      <div class="section-container" style="max-width: 720px;">
+        <div class="reveal" style="text-align: center;">
+          <p class="section-eyebrow" data-i18n="specs.badge">Specifications</p>
+          <h2 class="section-title" data-i18n="specs.title">สเปกที่พร้อมสำหรับทุกวัน</h2>
+        </div>
+
+        <div class="specs-wrap reveal reveal-delay-1">
+          <div class="spec-row">
+            <p class="spec-label" data-i18n="specs.item1.label">แบตเตอรี่</p>
+            <p class="spec-value" data-i18n="specs.item1.value">สูงสุด 40 ชั่วโมงพร้อมเคสชาร์จ</p>
+          </div>
+          <div class="spec-row">
+            <p class="spec-label" data-i18n="specs.item2.label">การเชื่อมต่อ</p>
+            <p class="spec-value" data-i18n="specs.item2.value">Bluetooth 5.4 พร้อม Low Latency Mode</p>
+          </div>
+          <div class="spec-row">
+            <p class="spec-label" data-i18n="specs.item3.label">ไมโครโฟน</p>
+            <p class="spec-value" data-i18n="specs.item3.value">6 ตัว พร้อม AI Voice Isolation</p>
+          </div>
+          <div class="spec-row">
+            <p class="spec-label" data-i18n="specs.item4.label">น้ำหนัก</p>
+            <p class="spec-value" data-i18n="specs.item4.value">ข้างละ 4.8 กรัม</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section" style="background: var(--surface); border-top: 0.5px solid var(--border);">
+      <div class="section-container">
+        <div class="pricing-card reveal">
+          <p class="pricing-eyebrow" data-i18n="pricing.badge">Launch Offer</p>
+          <h2 class="pricing-product-name" data-i18n="pricing.title">LUMI Air Pro</h2>
+          <p class="pricing-desc" data-i18n="pricing.text">เหมาะสำหรับใช้เป็นตัวอย่าง Landing Page สินค้าพรีเมียมสำหรับนำเสนอลูกค้า</p>
+
+          <div class="pricing-amount">฿1,500</div>
+          <div class="pricing-note">สอบถามราคาเพิ่มเติม</div>
+
+          <div class="pricing-divider"></div>
+          <span class="pricing-arrow">↓</span>
+
+          <br>
+          <a href="https://www.krittanon.site" class="cta-pricing" data-i18n="pricing.cta">
+            สนใจทำเว็บไซต์แบบนี้
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-text">© 2026 LUMI Demo Landing Page</p>
+      <p class="footer-text" data-i18n="footer.note">ตัวอย่างเว็บไซต์สำหรับนำเสนอผลงาน ไม่ใช่สินค้าจริง</p>
+    </div>
+  </footer>
+
+  <!-- Reveal on scroll -->
+  <script>
+    (() => {
+      const els = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -63,7 +63,39 @@
 
 <body>
   <div class="page-bg"></div>
- 
+  
+<header class="fixed left-0 right-0 top-0 z-50 border-b border-slate-200/70 bg-white/75 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+      <a href="#home" class="text-sm font-semibold tracking-[0.24em] text-slate-950">
+        LUMI
+      </a>
+
+      <div class="hidden items-center gap-8 text-sm text-slate-600 md:flex">
+        <a href="#features" class="transition hover:text-slate-950" data-i18n="nav.features">ฟีเจอร์</a>
+        <a href="#design" class="transition hover:text-slate-950" data-i18n="nav.design">ดีไซน์</a>
+        <a href="#specs" class="transition hover:text-slate-950" data-i18n="nav.specs">สเปก</a>
+        <a href="#pricing" class="transition hover:text-slate-950" data-i18n="nav.pricing">ราคา</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button
+          type="button"
+          id="language-toggle"
+          class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-950 shadow-sm transition hover:bg-slate-100"
+        >
+          EN
+        </button>
+
+        <a
+          href="#pricing"
+          class="rounded-full bg-slate-950 px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-slate-800"
+          data-i18n="nav.buy"
+        >
+          สั่งซื้อ
+        </a>
+      </div>
+    </nav>
+  </header>
   <main>
     <!-- HERO -->
     <section id="home" class="hero-section" style="padding: 120px 22px 80px;">
